@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mi Primera "Tienda" - Material Radiológico</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <h1>RadShop</h1>
+      <nav>
+        <a href="#productos">Productos</a>
+        <a href="#contacto">Contacto</a>
+      </nav>
+    </header>
+
+    <main class="principal">
+      <aside class="filtros">
+        <h2>Filtrar</h2>
+
+        <div class="seccion-filtros">
+          <label for="search">Buscar producto</label>
+          <input type="search" id="search" placeholder="Detector…" />
+        </div>
+
+        <fieldset class="seccion-filtros">
+          <legend>Tipo de producto</legend>
+          <label>
+            <input type="checkbox" name="tipo" value="detector" />
+            Detectores DR
+          </label>
+          <label>
+            <input type="checkbox" name="tipo" value="proteccion" />
+            Protección personal
+          </label>
+          <label>
+            <input type="checkbox" name="tipo" value="equipo" />
+            Equipos RX
+          </label>
+        </fieldset>
+
+        <div class="seccion-filtros">
+          <label for="price">Precio máximo (€)</label>
+          <input type="range" id="price" min="0" max="20000" value="20000" />
+        </div>
+      </aside>
+
+      <section class="products" id="productos">
+        <ul class="product-grid">
+          <li>
+            <article>
+              <a
+                href="https://healthcaresolutions-us.fujifilm.com/products/diagnostic-imaging/digital-radiography/dr-detectors/fdr-d-evo-iii/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://healthcaresolutions-us.fujifilm.com/wp-content/uploads/2023/03/D-EVO-III-Detector-Family-300x188.jpg"
+                  alt="Detector Fujifilm FDR D-EVO III"
+                />
+              </a>
+              <h3>Detector DR Fujifilm FDR D-EVO III</h3>
+              <span class="price">14.900 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://us.medical.canon/products/x-ray/cxdi-digital-radiography-systems/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://us.medical.canon/resources/img/products/x-ray/cxdi-digital-radiography-systems/overview-cxdi-10-series.jpg"
+                  alt="Detector Canon CXDI-10 Series"
+                />
+              </a>
+              <h3>Detector DR Canon CXDI-10</h3>
+              <span class="price">13.800 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.vareximaging.com/solutions/lumen-4343w/"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://mlry13pl3zwb.i.optimole.com/w:1226/h:552/q:mauto/ig:avif/https://www.vareximaging.com/wp-content/uploads/2022/01/4343W-1.png"
+                  alt="Detector Varex LUMEN 4343W"
+                />
+              </a>
+              <h3>Detector Varex LUMEN 4343W</h3>
+              <span class="price">12.600 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://prizmedimaging.com/products/ge-optima-xr240amx-portable-x-ray-system"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://prizmedimaging.com/cdn/shop/files/GEOptimaXR240amxPortableX-RaySystem.png?v=1746472833&width=358"
+                  alt="Equipo móvil GE Optima XR240amx"
+                />
+              </a>
+              <h3>Equipo Móvil GE Optima XR240amx</h3>
+              <span class="price">19.750 €</span>
+            </article>
+          </li>
+          <li>
+            <article>
+              <a
+                href="https://www.amazon.com/LyeXD-Radiology-Radiation-Protective-Laboratories/dp/B0CM66S6GL"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/41xDrS0NeWL._SY445_SX342_QL70_FMwebp_.jpg"
+                  alt="Media falda plomada 0,5 mm Pb"
+                />
+              </a>
+              <h3>Delantal Plomado Media Falda</h3>
+              <span class="price">54 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.amazon.com/Colortrieve-Protection-Gloves-Regular-Burgundy/dp/B07ND335W5"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/41vCQFHqEoL._SY445_SX342_QL70_FMwebp_.jpg"
+                  alt="Guantes plomados para RX"
+                />
+              </a>
+              <h3>Guantes Plomados 0,5 mm Pb</h3>
+              <span class="price">119 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.amazon.com/Thyroid-Collar-X-Ray-Imaging-Shield/dp/B076BFZ4R7"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/31dzx2nimhL._SS64_.jpg"
+                  alt="Collar tiroideo plomado"
+                />
+              </a>
+              <h3>Collar Tiroideo Plomado</h3>
+              <span class="price">48 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.radiacode.com/products/radiacode-103g"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://asset-static.radiacode.com/images/yxullyqn/production/448f030833aebdb44a73404f00d1d84ef939023c-2000x2000.webp"
+                  alt="Detector moderno con app movil"
+                />
+              </a>
+              <h3>Radiacode 103G</h3>
+              <span class="price">599 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.amazon.com/Radiation-Protective-Lightweight-Comfortable-Wrap-around/dp/B003Z9817W"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/31ExuqJqeZL.__AC_SY300_SX300_QL70_FMwebp_.jpg"
+                  alt="Gafas plomadas protección ocular"
+                />
+              </a>
+              <h3>Gafas Plomadas 0,75 mm Pb</h3>
+              <span class="price">130 €</span>
+            </article>
+          </li>
+
+          <li>
+            <article>
+              <a
+                href="https://www.amazon.com/GQ-GMC-300S-Digital-Radiation-Dosimeter/dp/B00IN8TJYY"
+                target="_blank"
+                rel="noopener"
+              >
+                <img
+                  src="https://m.media-amazon.com/images/I/615ZNdooHgL._AC_UY218_.jpg"
+                  alt="Dosímetro / Geiger GMC-300S"
+                />
+              </a>
+              <h3>Dosímetro GQ GMC-300S</h3>
+              <span class="price">68 €</span>
+            </article>
+          </li>
+        </ul>
+      </section>
+    </main>
+
+    <footer id="contacto">
+      <p>
+        &copy; 2025 RadShop · Para equipos de Rayos, Radioterapia y Medicina
+        Nuclear
+      </p>
+    </footer>
+  </body>
+</html>
