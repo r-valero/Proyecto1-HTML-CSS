@@ -42,7 +42,7 @@ a {
   text-decoration: none;
   color: inherit;
 }
-.price {
+.precio {
   font-weight: 700;
   color: var(--azul);
 }
@@ -116,7 +116,7 @@ a {
 .product-grid h3 {
   padding: 0.75rem 1rem 0;
 }
-.product-grid .price {
+.product-grid .precio {
   padding: 0 1rem 1rem;
   margin-top: auto;
 }
