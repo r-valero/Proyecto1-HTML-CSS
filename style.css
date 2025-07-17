@@ -1,17 +1,16 @@
 * {
   box-sizing: border-box;
 }
-
 :root {
   --azul: #0d47a1;
   --casi-blanco: #f5f7fa;
   --blanco: #ffffff;
   --negro: #212121;
+  --verde: #3ca25d;
   --letra: 1rem;
   --titulo: 2rem;
   --subtitulo: 1.25rem;
 }
-
 body {
   margin: 0;
   padding: 0;
@@ -21,11 +20,14 @@ body {
   color: var(--negro);
   line-height: 1.5;
 }
-
 h1,
 h2,
 h3 {
   margin: 0 0 0.5rem;
+}
+p,
+span {
+  color: var(--verde);
 }
 h1 {
   font-size: var(--titulo);
@@ -57,7 +59,6 @@ a {
   margin-left: 1rem;
   font-weight: 600;
 }
-
 .principal {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -66,36 +67,30 @@ a {
   margin: auto;
   padding: 1rem;
 }
-
 .filtros {
   background: var(--blanco);
   border-radius: 0.25rem;
   padding: 1rem;
   box-shadow: 0 2px 4px var(--negro);
 }
-
 .filtros .seccion-filtros {
   display: flex;
   flex-direction: column;
   gap: 0.5rem;
   padding-block: 0.5rem;
 }
-
 .filtros .seccion-filtros + .seccion-filtros {
   border-top: 1px solid #ddd;
   margin-top: 0.75rem;
 }
-
 .filtros fieldset.seccion-filtros {
   border: none;
   padding: 0;
 }
-
 .filtros legend {
   font-weight: 600;
   margin-bottom: 0.25rem;
 }
-
 .product-grid {
   list-style: none;
   padding: 0;
@@ -125,14 +120,12 @@ a {
   padding: 0 1rem 1rem;
   margin-top: auto;
 }
-
 footer {
   text-align: center;
   padding: 1rem;
   background: #eee;
   font-size: 0.875rem;
 }
-
 @media (max-width: 768px) {
   .principal {
     grid-template-columns: 200px 1fr;
